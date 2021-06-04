@@ -1,0 +1,2 @@
+class SmartHome:
+    pass
