@@ -1,10 +1,8 @@
 class Room:
 
-
     def __init__(self, room_id, room_name):
         self._room_id = room_id
         self._room_name = room_name
-
 
     def create_rooms(self):
         pass
