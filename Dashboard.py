@@ -14,11 +14,9 @@ def main():
     number_of_rooms = int(input("How many rooms are there in this property?: "))
     number_of_smartplugs = int(input("How many plugs do you want to place in this property?: "))
 
-    rooms = []
-    for i in range(number_of_rooms):
-        name_of_rooms = input("Please provide a name for your room/rooms separated by a space: ")
-        rooms.append(name_of_rooms)
-        print(i + 1, rooms[i])
+    for i in range(number_of_rooms + 1):
+        name_of_rooms = input("Please provide a name for your room: ")
+        Room(i, name_of_rooms)
         # Room(room_id, name_of_rooms[i])
 
 

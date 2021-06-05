@@ -1,8 +1,13 @@
 class Room:
 
+
     def __init__(self, room_id, room_name):
         self._room_id = room_id
         self._room_name = room_name
+
+
+    def create_rooms(self):
+        pass
 
     def set_room_name(self, value):
         self._room_name = value
@@ -16,3 +21,5 @@ class Room:
 
     def get_room_id(self):
         return self._room_id
+
+    # turn all the smartplugs too off
