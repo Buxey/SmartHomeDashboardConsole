@@ -1,12 +1,10 @@
 class Room:
-    def __init__(self, room_name, room_id):
-        # _ means they are protected variables
-        # these probally need to be turned into an array
-        self._room_name = room_name
+
+    def __init__(self, room_id, room_name):
         self._room_id = room_id
+        self._room_name = room_name
 
     def set_room_name(self, value):
-        # need to double check this
         self._room_name = value
 
     def get_room_name(self):
