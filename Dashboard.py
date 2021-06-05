@@ -1,4 +1,4 @@
-from Room import Room
+from SmartHome import SmartHome
 
 
 # start building your classes this might help you build your project
@@ -16,7 +16,7 @@ def main():
 
     for i in range(number_of_rooms):
         name_of_room = str(input("please enter the name of your room: "))
-        Room(i, name_of_room)
+        SmartHome(i, name_of_room)
 
 
 main()

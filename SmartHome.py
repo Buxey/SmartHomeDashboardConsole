@@ -2,13 +2,14 @@ from Room import Room
 
 
 class SmartHome:
-    Room = []
+    rooms_list = []
 
-    def __init__(self, size_of_array):
-        self.size_of_array = size_of_array
 
-    def set_size_of_array(self, size_of_array):
-        self.size_of_array = size_of_array
+def __init__(self, room_status, room_id):
+    self.room_status = room_status
+    self.room_id = room_id
 
-    def get_size_of_array(self):
-        return self.size_of_array
+
+def create_rooms(room_id, room_name, rooms_list):
+    room = Room(room_id, room_name)
+    rooms_list.append(room)
