@@ -1,10 +1,12 @@
 class Room:
-    _room_id = None
-    _room_name = None
 
     def __init__(self, _room_id, _room_name):
         self._room_id = _room_id
         self._room_name = _room_name
+
+    def __str__(self):
+        # we will
+        return f"{self._room_id} {self._room_name}"
 
     def set_room_name(self, value):
         self._room_name = value

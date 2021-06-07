@@ -1,3 +1,4 @@
+import ConsoleHelper
 from SmartHome import SmartHome
 
 
@@ -14,9 +15,17 @@ def main():
     number_of_rooms = int(input("How many rooms are there in this property?: "))
     number_of_smartplugs = int(input("How many plugs do you want to place in this property?: "))
 
-    for i in range(number_of_rooms):
-        name_of_room = str(input("please enter the name of your room: "))
-        SmartHome(i, name_of_room)
+    # we create our smart_home object
+    # this allows us to access the methods inside of the smarthome class
+    smart_home = SmartHome()
+
+    for room_id in range(number_of_rooms):
+        name_of_room = input("please enter the name of your room: ")
+        # double check the room + 1
+        # pass these values inside of add_room
+        smart_home.add_room(room_id + 1, name_of_room)
+    smart_home.display_room_list()
+    ConsoleHelper.display_list_options()
 
 
 main()
