@@ -1,18 +1,18 @@
 class SmartPlug:
 
-    def __init__(self, smartplug_name, smartplug_id):
-        self.smartplug_status = False
-        self.smartplug_name = smartplug_name
-        self.smartplug_id = smartplug_id
+    def __init__(self, smart_plug_name, smart_plug_id):
+        self.smart_plug_status = False
+        self.smart_plug_name = smart_plug_name
+        self.smart_plug_id = smart_plug_id
 
-    def set_smartplug_name(self, smartplug_name):
-        self.smartplug_name = smartplug_name
+    def set_smart_plug_name(self, smart_plug_name):
+        self.smart_plug_name = smart_plug_name
 
-    def get_smartplug_name(self):
-        return self.smartplug_name
+    def get_smart_plug_name(self):
+        return self.smart_plug_name
 
-    def set_smartplug_id(self, smartplug_id):
-        self.smartplug_id = smartplug_id
+    def set_smart_plug_id(self, smart_plug_id):
+        self.smart_plug_id = smart_plug_id
 
-    def get_smartplug_id(self):
-        return self.smartplug_id
+    def get_smart_plug_id(self):
+        return self.smart_plug_id

@@ -14,10 +14,9 @@ class Room:
     def create_smart_plug_list(self, device_type, smartplug_id):
         smart_plug = SmartPlug(device_type, smartplug_id)
         self._plug_list.append(smart_plug)
-        print(smart_plug.get_smartplug_name())
+        print(smart_plug.get_smart_plug_name())
 
     def __str__(self):
-        # might need to pass in the smartplug here
         return f"{self._room_id} - {self._room_name} "
 
     def create_smartplug(self):

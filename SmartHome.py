@@ -12,6 +12,7 @@ class SmartHome:
         self._rooms_list.append(room)
 
     def add_smart_plug(self, room_index, device_type):
+        # need to understand line below
         self._rooms_list[room_index].create_smart_plug_list(device_type, self._number_of_plugs + 1)
         self._number_of_plugs += 1
 
