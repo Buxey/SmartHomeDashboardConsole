@@ -5,7 +5,8 @@ class Room:
         self._room_name = _room_name
 
     def __str__(self):
-        # we will
+        # this turns our data into readable text
+        # because the data is stored in memory
         return f"{self._room_id} {self._room_name}"
 
     def set_room_name(self, value):

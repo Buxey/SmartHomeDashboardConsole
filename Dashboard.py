@@ -6,10 +6,10 @@ from SmartHome import SmartHome
 
 # 1) get number of rooms (done)
 # 2) get number of plugs (done)
-# 3) do a for loop for each room on its own, sorting out any variables that need to be sorted out
-# 4) add that room object to the end of the array of rooms at the end of each iteration
+# 3) do a for loop for each room on its own, sorting out any variables that need to be sorted out (done)
+# 4) add that room object to the end of the array of rooms at the end of each iteration (done)
 # 5) do a for loop sorting out the plugs
-# 6) add each plug object to the room (however you've done this)
+# 6) add each plug object to the room (this will be another for loop and then appending this to the list)
 
 def main():
     number_of_rooms = int(input("How many rooms are there in this property?: "))

@@ -4,6 +4,7 @@ from Room import Room
 class SmartHome:
 
     def __init__(self):
+        # write this into a flash card
         self._rooms_list = []
 
     def add_room(self, room_id, name_of_room):
@@ -17,7 +18,7 @@ class SmartHome:
     # need to come back to this
 
     def display_room_list(self):
-        print("ENTER PLUG INFORMATION BELOW ")
+        print("ENTER PLUG INFORMATION BELOW: ")
         for room in self._rooms_list:
             print(room)
 
