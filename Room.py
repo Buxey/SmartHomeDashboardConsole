@@ -38,8 +38,9 @@ class Room:
     #         smart_plug.smart_plug_status(state)
 
     def set_all_plugs(self, value):
-        for smart_plug in self._plug_list:
+        for plug in self._plug_list:
             if value == 1:
-                smart_plug.smart_plug_status(True)
+                # i believe this issue lies here
+                plug.turn_on_smart_plugs()
             if value == 2:
-                smart_plug.smart_plug_status(False)
+                plug.turn_off_smart_plugs()
