@@ -23,7 +23,9 @@ class SmartHome:
         for room in self._rooms_list:
             print(room)
 
-    def set_all_plugs(self, state_of_smart_plugs):
+    def set_all_plugs_smart_home(self, state_of_smart_plugs):
         for room in self._rooms_list:
             # ask connor about this i do not understand how i can access the set_all_plugs method
-            room.set_all_plugs(state_of_smart_plugs)
+            # i believe that the set_all_plugs method inside of Room
+            # is not talking to this method inside of SmartHome
+            room.set_all_plugs_rooms(state_of_smart_plugs)

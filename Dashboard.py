@@ -22,7 +22,7 @@ def main():
         smart_home.add_smart_plug(smart_plug_index, device_list[device_selection - 1])
     on_or_off_selection = input(
         "HOUSE LEVEL OPTIONS:\n1 - Switch all plugs on 2\n - Switch all plugs off\n Select an option")
-    smart_home.set_all_plugs(on_or_off_selection)
+    smart_home.set_all_plugs_smart_home(on_or_off_selection)
 
 
 main()

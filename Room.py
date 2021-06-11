@@ -7,8 +7,6 @@ class Room:
         self._room_id = _room_id
         self._room_name = _room_name
         self._plug_list = []
-        self._option = None
-        self._state = None
 
     def create_smart_plug_list(self, device_type, smart_plug_id):
         smart_plug = SmartPlug(False, device_type, smart_plug_id)
@@ -37,10 +35,12 @@ class Room:
     #     for smart_plug in self._plug_list:
     #         smart_plug.smart_plug_status(state)
 
-    def set_all_plugs(self, value):
+    def set_all_plugs_rooms(self, value):
         for plug in self._plug_list:
             if value == 1:
                 # i believe this issue lies here
                 plug.turn_on_smart_plugs()
+                # print statement does not work
+                plug.get_smart_plug_status()
             if value == 2:
-                plug.turn_off_smart_plugs()
+                plug.turn_on_smart_plugs()

@@ -28,9 +28,3 @@ class SmartPlug:
 
     def get_smart_plug_status(self):
         return self.smart_plug_status
-
-    # def smart_plug_status(self, value):
-    #     if value == 1:
-    #         self.smart_plug_status = True
-    #     if value == 2:
-    #         self.smart_plug_status = False
