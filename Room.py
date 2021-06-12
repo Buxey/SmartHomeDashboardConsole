@@ -27,11 +27,9 @@ class Room:
     def get_room_id(self):
         return self._room_id
 
-    def set_plug_status_room(self, state_of_smart_plugs):
+    def set_plug_status(self, state_of_smart_plugs):
         for plug in self._plug_list:
-            if state_of_smart_plugs == 1:
-                plug.turn_on_smart_plugs()
-                print(plug.get_smart_plug_status())
-            if state_of_smart_plugs == 2:
-                plug.turn_off_smart_plugs()
-                print(plug.get_smart_plug_status())
+            if state_of_smart_plugs:
+                plug.set_smart_plug_status(True)
+            else:
+                plug.set_smart_plug_status(False)

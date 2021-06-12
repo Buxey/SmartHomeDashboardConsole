@@ -20,11 +20,5 @@ class SmartPlug:
     def set_smart_plug_status(self, smart_plug_status):
         self.smart_plug_status = smart_plug_status
 
-    def turn_on_smart_plugs(self):
-        self.smart_plug_status = True
-
-    def turn_off_smart_plugs(self):
-        self.smart_plug_status = False
-
     def get_smart_plug_status(self):
         return self.smart_plug_status

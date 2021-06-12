@@ -21,7 +21,10 @@ class SmartHome:
         for room in self._rooms_list:
             print(room)
 
-    def set_plug_status_smart_home(self, state_of_smart_plugs):
+    def set_plug_status(self, state_of_smart_plugs):
         for room in self._rooms_list:
-            # ask connor about this i do not understand how i can access the set_plug_status_room method
-            room.set_plug_status_room(state_of_smart_plugs)
+            if state_of_smart_plugs == 1:
+                state_of_smart_plugs = True
+            else:
+                state_of_smart_plugs = False
+            room.set_plug_status(state_of_smart_plugs)
