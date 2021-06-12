@@ -30,10 +30,7 @@ class Room:
     def set_plug_status_room(self, state_of_smart_plugs):
         for plug in self._plug_list:
             if state_of_smart_plugs == 1:
-                # i believe this issue lies here
-                # i do not believe that the method inside of smartPlug is being called
                 plug.turn_on_smart_plugs()
-                # print statement does not work
                 print(plug.get_smart_plug_status())
             if state_of_smart_plugs == 2:
                 plug.turn_off_smart_plugs()

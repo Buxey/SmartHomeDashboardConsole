@@ -1,5 +1,4 @@
 from Room import Room
-from SmartPlug import SmartPlug
 
 
 class SmartHome:
@@ -25,6 +24,4 @@ class SmartHome:
     def set_plug_status_smart_home(self, state_of_smart_plugs):
         for room in self._rooms_list:
             # ask connor about this i do not understand how i can access the set_plug_status_room method
-            # i believe that the set_plug_status_room inside of the room class
-            # is not talking to this method inside of SmartHome
             room.set_plug_status_room(state_of_smart_plugs)
