@@ -29,7 +29,5 @@ class Room:
 
     def set_plug_status(self, state_of_smart_plugs):
         for plug in self._plug_list:
-            if state_of_smart_plugs:
-                plug.set_smart_plug_status(True)
-            else:
-                plug.set_smart_plug_status(False)
+            plug.set_smart_plug_status(state_of_smart_plugs)
+            print(plug.get_smart_plug_status())

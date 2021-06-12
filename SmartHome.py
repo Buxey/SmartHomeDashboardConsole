@@ -23,8 +23,4 @@ class SmartHome:
 
     def set_plug_status(self, state_of_smart_plugs):
         for room in self._rooms_list:
-            if state_of_smart_plugs == 1:
-                state_of_smart_plugs = True
-            else:
-                state_of_smart_plugs = False
             room.set_plug_status(state_of_smart_plugs)

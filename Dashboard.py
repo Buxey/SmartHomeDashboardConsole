@@ -20,8 +20,8 @@ def main():
         device_selection = int(input(
             "Using the above list, please select the device to attach to the smart plug (integer only): "))
         smart_home.add_smart_plug(smart_plug_index, device_list[device_selection - 1])
-    on_or_off_selection = int(input(
-        "HOUSE LEVEL OPTIONS:\n 1 - Switch all plugs on \n 2 - Switch all plugs off\nSelect an option: "))
+    on_or_off_selection = bool(int(input(
+        "HOUSE LEVEL OPTIONS:\n 0 - Switch all plugs off \n 1 - Switch all plugs on\nSelect an option: ")))
     smart_home.set_plug_status(on_or_off_selection)
 
 
