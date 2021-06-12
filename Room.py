@@ -27,20 +27,14 @@ class Room:
     def get_room_id(self):
         return self._room_id
 
-    # maybe try and do the calculations in room
-    # then call one of the methods inside of smartplug
-    # then change the status that way
-
-    # def set_all_plugs(self, state):
-    #     for smart_plug in self._plug_list:
-    #         smart_plug.smart_plug_status(state)
-
-    def set_all_plugs_rooms(self, value):
+    def set_plug_status_room(self, state_of_smart_plugs):
         for plug in self._plug_list:
-            if value == 1:
+            if state_of_smart_plugs == 1:
                 # i believe this issue lies here
+                # i do not believe that the method inside of smartPlug is being called
                 plug.turn_on_smart_plugs()
                 # print statement does not work
-                plug.get_smart_plug_status()
-            if value == 2:
-                plug.turn_on_smart_plugs()
+                print(plug.get_smart_plug_status())
+            if state_of_smart_plugs == 2:
+                plug.turn_off_smart_plugs()
+                print(plug.get_smart_plug_status())
