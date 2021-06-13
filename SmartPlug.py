@@ -22,3 +22,9 @@ class SmartPlug:
 
     def get_smart_plug_status(self):
         return self.smart_plug_status
+
+    def display_smart_plugs(self):
+        status = f" example {self.smart_plug_status} " \
+                 f"example {self.smart_plug_id} " \
+                 f"example {self.smart_plug_name}"
+        print(status)

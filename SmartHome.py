@@ -24,3 +24,7 @@ class SmartHome:
     def set_plug_status(self, state_of_smart_plugs):
         for room in self._rooms_list:
             room.set_plug_status(state_of_smart_plugs)
+
+    def display_smart_plugs(self):
+        for room in self._rooms_list:
+            room.display_smart_plugs()

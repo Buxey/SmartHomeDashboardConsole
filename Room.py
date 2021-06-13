@@ -30,3 +30,7 @@ class Room:
     def set_plug_status(self, state_of_smart_plugs):
         for plug in self._plug_list:
             plug.set_smart_plug_status(state_of_smart_plugs)
+
+    def display_smart_plugs(self):
+        for plug in self._plug_list:
+            plug.display_smart_plugs()

@@ -1,5 +1,6 @@
 import ConsoleHelper
 from SmartHome import SmartHome
+from SmartPlug import SmartPlug
 
 
 def main():
@@ -8,6 +9,8 @@ def main():
     number_of_smart_plugs = int(input("How many plugs do you want to place in this property?: "))
 
     smart_home = SmartHome()
+
+
 
     for room_id in range(number_of_rooms):
         name_of_room = input("please enter the name of your room: ")
@@ -29,8 +32,9 @@ def main():
         "1 - Switch all devices off in room \n "
         "2 - Switch all devices on in room \n "
         "3 - Select a device in the room and toggle its on/off status ")
-    smart_home.display_room_list()
     room_level_selection = int(input("Select an option (integer only): "))
+    smart_home.display_smart_plugs()
+
 
 
 main()
