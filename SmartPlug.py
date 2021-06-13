@@ -32,8 +32,8 @@ class SmartPlug:
 
     def display_smart_plugs(self):
         status = \
-            f"SmartPlug | attached to: {self.smart_plug_device}" \
-            f" | room: {self.smart_plug_room_name}" \
+            f"SmartPlug | Attached To: {self.smart_plug_device}" \
+            f" | Room: {self.smart_plug_room_name}" \
             f" | ID: {self.smart_plug_id}" \
             f" | Status: {self.smart_plug_status}"
         print(status)
