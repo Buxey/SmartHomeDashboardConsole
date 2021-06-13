@@ -6,11 +6,17 @@ class SmartPlug:
         self.smart_plug_id = smart_plug_id
         self.smart_plug_status = smart_plug_status
 
-    def set_smart_plug_name(self, smart_plug_device):
+    def set_smart_plug_device(self, smart_plug_device):
         self.smart_plug_device = smart_plug_device
 
-    def get_smart_plug_name(self):
+    def get_smart_plug_device(self):
         return self.smart_plug_device
+
+    def set_smart_plug_room_name(self, smart_plug_room_name):
+        self.smart_plug_room_name = smart_plug_room_name
+
+    def get_smart_plug_room_name(self):
+        return self.smart_plug_room_name
 
     def set_smart_plug_id(self, smart_plug_id):
         self.smart_plug_id = smart_plug_id
