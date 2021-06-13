@@ -1,15 +1,16 @@
 class SmartPlug:
 
-    def __init__(self, smart_plug_status, smart_plug_name, smart_plug_id):
-        self.smart_plug_status = smart_plug_status
-        self.smart_plug_name = smart_plug_name
+    def __init__(self, smart_plug_device, smart_plug_room_name, smart_plug_id, smart_plug_status):
+        self.smart_plug_device = smart_plug_device
+        self.smart_plug_room_name = smart_plug_room_name
         self.smart_plug_id = smart_plug_id
+        self.smart_plug_status = smart_plug_status
 
-    def set_smart_plug_name(self, smart_plug_name):
-        self.smart_plug_name = smart_plug_name
+    def set_smart_plug_name(self, smart_plug_device):
+        self.smart_plug_device = smart_plug_device
 
     def get_smart_plug_name(self):
-        return self.smart_plug_name
+        return self.smart_plug_device
 
     def set_smart_plug_id(self, smart_plug_id):
         self.smart_plug_id = smart_plug_id
@@ -24,7 +25,9 @@ class SmartPlug:
         return self.smart_plug_status
 
     def display_smart_plugs(self):
-        status = f" example {self.smart_plug_status} " \
-                 f"example {self.smart_plug_id} " \
-                 f"example {self.smart_plug_name}"
+        status = \
+            f"SmartPlug | attached to: {self.smart_plug_device}" \
+            f" | room: {self.smart_plug_room_name}" \
+            f" | ID: {self.smart_plug_id}" \
+            f" | Status: {self.smart_plug_status}"
         print(status)
