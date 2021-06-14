@@ -14,6 +14,7 @@ def main():
         smart_home.create_room(room_id + 1, name_of_room)
     smart_home.display_room_list()
     ConsoleHelper.display_list_options(device_list)
+    # i believe the issue might lie with the smart_plug_index
     for smart_plug_index in range(number_of_smart_plugs):
         device_selection = int(input(
             "Using the above list, please select the device to attach to the smart plug (integer only): "))
@@ -22,7 +23,6 @@ def main():
         "HOUSE LEVEL OPTIONS:\n 0 - Switch all plugs off \n"
         " 1 - Switch all plugs on\nSelect an option (integer only): ")))
     smart_home.set_plug_status(on_or_off_selection)
-    # i believe this variable needs to talk to the plug_list but not 100%
     smart_home.display_smart_plugs()
     room_id_selection = int(input("Using the above list, please select the room for this plug (integer only): "))
 

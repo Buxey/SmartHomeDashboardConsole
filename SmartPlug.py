@@ -35,6 +35,6 @@ class SmartPlug:
         status = \
             f"SmartPlug | Attached To: {self.smart_plug_device}" \
             f" | Room: {self.smart_plug_room_name}" \
-            f" | ID: {self.smart_plug_id}"  \
+            f" | ID: {self.smart_plug_id}" \
             f" | Status: {self.smart_plug_status}"
         print(status)
