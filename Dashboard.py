@@ -25,6 +25,7 @@ def main():
     # i believe this variable needs to talk to the plug_list but not 100%
     smart_home.display_smart_plugs()
     room_id_selection = int(input("Using the above list, please select the room for this plug (integer only): "))
+
     print(
         "ROOM LEVEL OPTIONS: \n "
         "1 - Switch all devices off in room \n "
