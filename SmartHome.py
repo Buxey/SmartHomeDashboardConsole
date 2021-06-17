@@ -2,19 +2,20 @@ from Room import Room
 
 
 class SmartHome:
-
     def __init__(self):
         self._rooms_list = []
-        self._number_of_plugs = 0
 
     def create_room(self, room_id, name_of_room):
         room = Room(room_id, name_of_room)
         self._rooms_list.append(room)
 
-    def add_smart_plug(self, room_id_selection, smart_plug_index, device_type):
-        # need to understand line below (need someone to explain this to me)
-        self._rooms_list[smart_plug_index].create_smart_plug_list(room_id_selection, device_type, self._number_of_plugs + 1)
-        self._number_of_plugs += 1
+    def add_smart_plug(self, room_id_selection, device_type, smart_plug_id):
+        # i believe because we are interating through the _rooms_list
+        # as this has an object attached to it we can therefore access the methods
+        # inside of Room
+        for room in self._rooms_list:
+            if room.get_room_id() == room_id_selection:
+                room.create_smart_plug_list(device_type, smart_plug_id)
 
     def display_room_list(self):
         print("ENTER PLUG INFORMATION BELOW:\nROOMS AVAILABLE:")

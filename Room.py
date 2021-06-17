@@ -2,15 +2,13 @@ from SmartPlug import SmartPlug
 
 
 class Room:
-
     def __init__(self, _room_id, _room_name):
         self._room_id = _room_id
         self._room_name = _room_name
         self._plug_list = []
 
-    def create_smart_plug_list(self, room_id_selection, device_type, smart_plug_id):
-        # it might have something to do with me missing the room_id
-        smart_plug = SmartPlug(room_id_selection, device_type, self._room_name, smart_plug_id, False)
+    def create_smart_plug_list(self, device_type, smart_plug_id):
+        smart_plug = SmartPlug(device_type, self._room_name, smart_plug_id, False)
         self._plug_list.append(smart_plug)
 
     def __str__(self):

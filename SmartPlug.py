@@ -1,7 +1,6 @@
 class SmartPlug:
 
-    def __init__(self, room_id, smart_plug_device, smart_plug_room_name, smart_plug_id, smart_plug_status):
-        self.room_id = room_id
+    def __init__(self, smart_plug_device, smart_plug_room_name, smart_plug_id, smart_plug_status):
         self.smart_plug_device = smart_plug_device
         self.smart_plug_room_name = smart_plug_room_name
         self.smart_plug_id = smart_plug_id
@@ -32,7 +31,6 @@ class SmartPlug:
         return self.smart_plug_status
 
     def display_smart_plugs(self):
-        # smart_plug_id might instead be called room_id
         status = \
             f"SmartPlug | Attached To: {self.smart_plug_device}" \
             f" | Room: {self.smart_plug_room_name}" \
