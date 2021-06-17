@@ -1,6 +1,7 @@
 class SmartPlug:
 
-    def __init__(self, smart_plug_device, smart_plug_room_name, smart_plug_id, smart_plug_status):
+    def __init__(self, room_id, smart_plug_device, smart_plug_room_name, smart_plug_id, smart_plug_status):
+        self.room_id = room_id
         self.smart_plug_device = smart_plug_device
         self.smart_plug_room_name = smart_plug_room_name
         self.smart_plug_id = smart_plug_id
