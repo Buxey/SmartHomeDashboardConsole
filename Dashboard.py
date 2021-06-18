@@ -25,11 +25,18 @@ def main():
         " 1 - Switch all plugs on\nSelect an option (integer only): ")))
     smart_home.set_plug_status(on_or_off_selection)
     smart_home.display_smart_plugs()
+    room_id_selection_2 = int(input("Please select a room (integer only): "))
+    smart_home.display_selected_room(room_id_selection_2)
     print(
         "ROOM LEVEL OPTIONS: \n "
-        "1 - Switch all devices off in room \n "
-        "2 - Switch all devices on in room \n "
-        "3 - Select a device in the room and toggle its on/off status ")
+        "0 - Switch all devices off in room \n "
+        "1 - Switch all devices on in room \n "
+        "2 - Select a device in the room and toggle its on/off status ")
+    # need to come back to the one above
+    room_level_option = bool(int(input(
+        "Please select an option: ")))
+    smart_home.room_level_status_change(room_id_selection_2, room_level_option)
+    smart_home.display_selected_room(room_id_selection_2)
 
 
 main()

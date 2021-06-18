@@ -10,9 +10,6 @@ class SmartHome:
         self._rooms_list.append(room)
 
     def add_smart_plug(self, room_id_selection, device_type, smart_plug_id):
-        # i believe because we are interating through the _rooms_list
-        # as this has an object attached to it we can therefore access the methods
-        # inside of Room
         for room in self._rooms_list:
             if room.get_room_id() == room_id_selection:
                 room.create_smart_plug_list(device_type, smart_plug_id)
@@ -25,6 +22,16 @@ class SmartHome:
     def set_plug_status(self, state_of_smart_plugs):
         for room in self._rooms_list:
             room.set_plug_status(state_of_smart_plugs)
+
+    def display_selected_room(self, room_id_selection):
+        for room in self._rooms_list:
+            if room.get_room_id() == room_id_selection:
+                room.display_smart_plugs()
+
+    def room_level_status_change(self, room_id_selection, state_of_smart_plugs):
+        for room in self._rooms_list:
+            if room.get_room_id() == room_id_selection:
+                room.set_plug_status(state_of_smart_plugs)
 
     def display_smart_plugs(self):
         for room in self._rooms_list:
