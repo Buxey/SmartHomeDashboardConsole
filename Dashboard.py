@@ -31,7 +31,7 @@ def main():
         "ROOM LEVEL OPTIONS: \n "
         "0 - Switch all devices off in room \n "
         "1 - Switch all devices on in room \n "
-        "2 - Select a device in the room and toggle its on/off status ")
+    )
     # need to come back to the one above
     room_level_option = bool(int(input(
         "Please select an option: ")))
