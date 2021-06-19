@@ -19,6 +19,11 @@ class SmartHome:
         for room in self._rooms_list:
             print(room)
 
+    def display_available_room_id(self):
+        print("ROOMS AVAILABLE:")
+        for room in self._rooms_list:
+            print(room)
+
     def set_plug_status(self, state_of_smart_plugs):
         for room in self._rooms_list:
             room.set_plug_status(state_of_smart_plugs)
