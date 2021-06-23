@@ -41,3 +41,7 @@ class SmartHome:
     def display_smart_plugs(self):
         for room in self._rooms_list:
             room.display_smart_plugs()
+
+    def get_smart_plug_id(self, smart_plug_id_selection):
+        for room in self._rooms_list:
+            room.get_smart_plug_id(smart_plug_id_selection)
