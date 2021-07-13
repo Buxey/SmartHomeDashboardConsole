@@ -37,7 +37,6 @@ def main():
         "Please select an option: ")))
     smart_home.room_level_status_change(room_id_selection_2, room_level_option)
     smart_home.display_selected_room(room_id_selection_2)
-    smart_home.display_smart_plugs()
     smart_plug_selection = int(input("Please select a plug (integer only): "))
     smart_home.get_smart_plug_id(smart_plug_selection)
     print(
