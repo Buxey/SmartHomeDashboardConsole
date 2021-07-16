@@ -34,7 +34,6 @@ class Room:
         for plug in self._plug_list:
             plug.display_smart_plugs()
 
-    def get_smart_plug_id(self, smart_plug_id_selection):
+    def get_smart_plug_id(self):
         for plug in self._plug_list:
-            if plug.get_smart_plug_id() == smart_plug_id_selection:
-                plug.get_smart_plug_id()
+            plug.get_smart_plug_id()
