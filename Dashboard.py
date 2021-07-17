@@ -37,15 +37,16 @@ def main():
         "Please select an option: ")))
     smart_home.room_level_status_change(room_id_selection_2, room_level_option)
     smart_home.display_selected_room(room_id_selection_2)
-    smart_plug_selection = int(input("Please select a plug (integer only): "))
+    smart_plug_id_selection = int(input("Please select a smart plug ID (integer only): "))
     print(
         "PLUG LEVEL OPTIONS \n 0 - Switch plug off \n 1 - Switch plug on \n 2 - Change attached device \n 3 - Move "
         "plug to different room")
     smart_plug_id_state = bool(int(input(
         "Please select an option: ")))
-    smart_home.room_level_smart_plug_id(smart_plug_selection, smart_plug_id_state)
-    smart_home.display_selected_smart_plug_id(smart_plug_selection)
+    smart_home.room_level_smart_plug_id(smart_plug_id_selection, smart_plug_id_state)
+    smart_home.display_selected_smart_plug_id(smart_plug_id_selection)
     # not showing updated smartplug_id with the changed status
+    # if we use display selected room this will only return the room Id not the smartplug ID
 
 
 main()

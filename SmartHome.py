@@ -36,6 +36,7 @@ class SmartHome:
     def display_selected_smart_plug_id(self, smart_plug_id):
         for room in self._rooms_list:
             if room.get_smart_plug_id() == smart_plug_id:
+                # from what i understand this function is not being called
                 room.display_smart_plugs()
 
     def room_level_status_change(self, room_id_selection, state_of_smart_plugs):
