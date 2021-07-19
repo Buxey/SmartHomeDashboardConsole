@@ -36,8 +36,10 @@ class Room:
 
     def get_smart_plug_id(self):
         for plug in self._plug_list:
-            plug.get_smart_plug_id()
+            # need to double check
+            return plug.get_smart_plug_id()
 
     def display_smart_plug_id(self):
         for plug in self._plug_list:
-            plug.display_smart_plug_id()
+            # need to double check
+            return plug.display_smart_plug_id()
