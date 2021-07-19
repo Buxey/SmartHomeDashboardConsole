@@ -24,6 +24,9 @@ class SmartPlug:
     def get_smart_plug_id(self):
         return self.smart_plug_id
 
+    def display_smart_plug_id(self):
+        self.display_smart_plugs()
+
     def set_smart_plug_status(self, smart_plug_status):
         self.smart_plug_status = smart_plug_status
 

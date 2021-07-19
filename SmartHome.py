@@ -38,9 +38,9 @@ class SmartHome:
             # once again i believe that some kind of condition is not being made because
             # when i run this thing through the debugger, it stops at the for loop and does not continue?
             # so this must mean that this get smartplug_id method i have is not doing what it should be doing??
+            # i am almost certain that the issue is that we are NOT GETTING THE SMARTPLUG ID
             if room.get_smart_plug_id() == smart_plug_id:
-                # from what i understand this function is not being called
-                room.display_smart_plugs()
+                room.display_smart_plug_id()
 
     def room_level_status_change(self, room_id_selection, state_of_smart_plugs):
         for room in self._rooms_list:
