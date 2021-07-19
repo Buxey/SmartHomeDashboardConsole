@@ -46,7 +46,7 @@ def main():
     smart_home.room_level_smart_plug_id(smart_plug_id_selection, smart_plug_id_state)
     smart_home.display_selected_smart_plug_id(smart_plug_id_selection)
     # not showing updated smartplug_id with the changed status
-    # if we use display selected room this will only return the room Id not the smartplug ID
+    # if we use display selected room this will only return the room Id not the smartplug ID this is not what we want
 
 
 main()
