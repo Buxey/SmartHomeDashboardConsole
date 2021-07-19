@@ -22,6 +22,7 @@ class SmartPlug:
         self.smart_plug_id = smart_plug_id
 
     def get_smart_plug_id(self):
+        # this is not doing what it should be doing
         return self.smart_plug_id
 
     def display_smart_plug_id(self):

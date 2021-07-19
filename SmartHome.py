@@ -35,10 +35,9 @@ class SmartHome:
 
     def display_selected_smart_plug_id(self, smart_plug_id):
         for room in self._rooms_list:
-            # once again i believe that some kind of condition is not being made because
-            # when i run this thing through the debugger, it stops at the for loop and does not continue?
-            # so this must mean that this get smartplug_id method i have is not doing what it should be doing??
-            # i am almost certain that the issue is that we are NOT GETTING THE SMARTPLUG ID
+            # for whatever reason the get_smart_plug_id is not working????
+            # this was working fine literally 30 seconds ago something has changed????
+            # the room.display_smart_plugs is never touched/ triggered????
             if room.get_smart_plug_id() == smart_plug_id:
                 room.display_smart_plug_id()
 
@@ -49,8 +48,7 @@ class SmartHome:
 
     def room_level_smart_plug_id(self, smart_plug_selection, state_of_smart_plugs):
         for room in self._rooms_list:
-            # from having a look it seems like this piece of code below is not being met therefore is it not calling
-            # the room.set_plug_status(state_of_smart_plugs) ????
+            # the below is not working
             if room.get_smart_plug_id() == smart_plug_selection:
                 room.set_plug_status(state_of_smart_plugs)
 
