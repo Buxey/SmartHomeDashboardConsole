@@ -44,7 +44,6 @@ def main():
     smart_plug_id_state = bool(int(input(
         "Please select an option: ")))
     smart_home.room_level_smart_plug_id(smart_plug_id_selection, smart_plug_id_state)
-    # the below code seems to be tempermental?????
     smart_home.display_selected_smart_plug_id(smart_plug_id_selection)
 
 

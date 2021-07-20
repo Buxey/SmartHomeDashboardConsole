@@ -34,7 +34,7 @@ class Room:
         for plug in self._plug_list:
             plug.display_smart_plugs()
 
-    # work on this bebelow
+    # need to work on the below
     def get_smart_plug_id(self):
         for plug in self._plug_list:
             plug.get_smart_plug_id()
