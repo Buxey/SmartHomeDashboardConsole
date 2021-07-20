@@ -35,9 +35,6 @@ class SmartHome:
 
     def display_selected_smart_plug_id(self, smart_plug_id):
         for room in self._rooms_list:
-            # for whatever reason the get_smart_plug_id is not working????
-            # this was working fine literally 30 seconds ago something has changed????
-            # the room.display_smart_plugs is never touched/ triggered????
             if room.get_smart_plug_id() == smart_plug_id:
                 room.display_smart_plug_id()
 
@@ -46,10 +43,8 @@ class SmartHome:
             if room.get_room_id() == room_id_selection:
                 room.set_plug_status(state_of_smart_plugs)
 
-    # the below is working fine
     def room_level_smart_plug_id(self, smart_plug_selection, state_of_smart_plugs):
         for room in self._rooms_list:
-            # the below is not working
             if room.get_smart_plug_id() == smart_plug_selection:
                 room.set_plug_status(state_of_smart_plugs)
 

@@ -36,12 +36,8 @@ class Room:
 
     def get_smart_plug_id(self):
         for plug in self._plug_list:
-            # this is not doing what it should be doing
-            # it should be returning the value of the smart plug id to get evaluated????
-            # this is then passed down to be checked by the if statement?
             return plug.get_smart_plug_id()
 
     def display_smart_plug_id(self):
         for plug in self._plug_list:
-            # i do not believe i need to return right here
             plug.display_smart_plug_id()
