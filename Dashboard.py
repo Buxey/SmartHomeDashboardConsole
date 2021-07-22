@@ -39,11 +39,11 @@ def main():
     smart_home.display_selected_room(room_id_selection_2)
     smart_plug_id_selection = int(input("Please select a smart plug ID (integer only): "))
     print(
-        "PLUG LEVEL OPTIONS \n 0 - Switch plug off \n 1 - Switch plug on \n 2 - Change attached device \n 3 - Move "
+        "PLUG LEVEL OPTIONS \n 1 - Switch plug off \n 2 - Switch plug on \n 3 - Change attached device \n 4 - Move "
         "plug to different room")
     smart_plug_id_option = int(input(
         "Please select an option: "))
-    if smart_plug_id_option == 0 and smart_plug_id_option == 1:
+    if smart_plug_id_option == 1 or smart_plug_id_option == 2:
         smart_home.smart_plug_id_state(smart_plug_id_selection, smart_plug_id_option)
         smart_home.display_selected_smart_plug_id(smart_plug_id_selection)
     if smart_plug_id_option == 2:
