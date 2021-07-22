@@ -34,10 +34,13 @@ class Room:
         for plug in self._plug_list:
             plug.display_smart_plugs()
 
-    # DOUBLE CHECK BELOW AND RUN
-    def get_smart_plug_id(self, smart_plug_id_selection, smart_plug_id_state):
+    def smart_plug_id_state(self, smart_plug_id_selection, smart_plug_id_state):
         for plug in self._plug_list:
             if plug.get_smart_plug_id() == smart_plug_id_selection:
+                if smart_plug_id_state == 0:
+                    smart_plug_id_state = False
+                if smart_plug_id_state == 1:
+                    smart_plug_id_state = True
                 self.set_plug_status(smart_plug_id_state)
 
     def display_smart_plug_id(self, smart_plug_id):

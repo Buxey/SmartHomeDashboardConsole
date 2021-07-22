@@ -38,7 +38,7 @@ class SmartHome:
             if room.get_room_id() == room_id_selection:
                 room.set_plug_status(state_of_smart_plugs)
 
-    def room_level_smart_plug_id(self, smart_plug_id_selection, smart_plug_id_state):
+    def smart_plug_id_state(self, smart_plug_id_selection, smart_plug_id_state):
         for room in self._rooms_list:
             room.get_smart_plug_id(smart_plug_id_selection, smart_plug_id_state)
 
