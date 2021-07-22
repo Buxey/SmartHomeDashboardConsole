@@ -47,3 +47,10 @@ class Room:
         for plug in self._plug_list:
             if plug.get_smart_plug_id() == smart_plug_id:
                 plug.display_smart_plugs()
+
+    def replace_smart_plug_device(self, smart_plug_id_selection, device_replacement):
+        # i am almost certain the device_replacement wont work
+        for plug in self._plug_list:
+            if plug.get_smart_plug_id == smart_plug_id_selection:
+                plug.set_smart_plug_device(device_replacement)
+

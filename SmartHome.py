@@ -53,3 +53,7 @@ class SmartHome:
     def get_smart_plug_id(self, smart_plug_id_selection):
         for room in self._rooms_list:
             room.get_smart_plug_id(smart_plug_id_selection)
+
+    def replace_device(self, smart_plug_id_selection, device_replacement):
+        for room in self._rooms_list:
+            room.replace_smart_plug_device(smart_plug_id_selection, device_replacement)

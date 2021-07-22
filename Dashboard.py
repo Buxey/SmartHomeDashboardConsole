@@ -46,10 +46,12 @@ def main():
     if smart_plug_id_option == 1 or smart_plug_id_option == 2:
         smart_home.smart_plug_id_state(smart_plug_id_selection, smart_plug_id_option)
         smart_home.display_selected_smart_plug_id(smart_plug_id_selection)
-    if smart_plug_id_option == 2:
-    # working on organisation of the options that are available
     if smart_plug_id_option == 3:
         ConsoleHelper.display_list_options(device_list)
+        smart_plug_device_selection = int(input(
+            "Enter device to replace current smart plug (integer only) "))
+        smart_home.replace_device(smart_plug_device_selection, device_list[smart_plug_device_selection - 1])
+        smart_home.display_selected_smart_plug_id(smart_plug_id_selection)
 
 
 main()
