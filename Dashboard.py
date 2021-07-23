@@ -50,7 +50,7 @@ def main():
         ConsoleHelper.display_list_options(device_list)
         smart_plug_device_selection = int(input(
             "Enter device to replace current smart plug (integer only) "))
-        smart_home.replace_device(smart_plug_device_selection, device_list[smart_plug_device_selection - 1])
+        smart_home.replace_device(smart_plug_id_selection, device_list[smart_plug_device_selection - 1])
         smart_home.display_selected_smart_plug_id(smart_plug_id_selection)
 
 
