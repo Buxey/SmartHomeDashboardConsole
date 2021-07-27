@@ -53,3 +53,9 @@ class Room:
             if plug.get_smart_plug_id() == smart_plug_id_selection:
                 plug.set_smart_plug_device(device_replacement)
                 return
+
+    def move_smart_plug(self, plug_selection):
+        for plug in self._plug_list:
+            # i need to create some kind of method to add this room to the selected room
+            plug.add_plug_to_room(plug_selection)
+
