@@ -52,6 +52,19 @@ def main():
             "Enter device to replace current smart plug (integer only) "))
         smart_home.replace_device(smart_plug_id_selection, device_list[smart_plug_device_selection - 1])
         smart_home.display_selected_smart_plug_id(smart_plug_id_selection)
+    if smart_plug_id_option == 4:
+        # we are displaying the potential rooms
+        smart_home.display_room_list()
+        # selecting the room that we want something to be moved into
+        room_selection = int(input(
+            "Please select the room you would like the smart plug to be moved to:  (integer only) "))
+        # we are now displaying all the available smart plugs
+        smart_home.display_smart_plugs()
+        # choosing our smart plug that we want to be moved into a different room
+        plug_selection = int(input(
+            "Please select the smart plug id you would like to move to your selected room:  (integer only) "))
+
+
 
 
 main()
