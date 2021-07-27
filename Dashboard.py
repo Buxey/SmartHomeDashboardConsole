@@ -64,5 +64,9 @@ def main():
         plug_selection = int(input(
             "Please select the smart plug id you would like to move to your selected room:  (integer only) "))
         smart_home.move_plug(room_selection, plug_selection)
+        # once everything has been moved we are then displaying everything
+        smart_home.display_selected_room(room_selection)
+        smart_home.display_smart_plugs()
+
 
 main()
