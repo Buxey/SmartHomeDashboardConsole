@@ -63,7 +63,7 @@ def main():
         smart_home.display_smart_plugs()
         # choosing our smart plug that we want to be moved into a different room
 
-        smart_home.move_plug(room_selection, smart_plug_id_selection)
+        smart_home.move_smart_plug(room_selection, smart_plug_id_selection)
         # once everything has been moved we are then displaying everything
         smart_home.display_selected_room(room_selection)
 

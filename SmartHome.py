@@ -58,11 +58,8 @@ class SmartHome:
         for room in self._rooms_list:
             room.replace_smart_plug_device(smart_plug_id_selection, device_replacement)
 
-    def move_plug(self, room_selection, plug_selection):
-        # iterating through the rooms
+    def move_smart_plug(self, room_selection, smart_plug_id_selection):
         for room in self._rooms_list:
-            # getting the right room with the right smart plug id
-            #if room.get_room_id() == room_selection:
-                # this method then needs to add the selected plug to a different room
-                # this working on this
-            room.move_smart_plug(room_selection, plug_selection)
+            if room.get_room_id() == room_selection:
+                room.create_smart_plug_list(room_selection, smart_plug_id_selection)
+                return
