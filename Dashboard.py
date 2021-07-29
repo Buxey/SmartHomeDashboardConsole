@@ -37,6 +37,7 @@ def main():
         "Please select an option: ")))
     smart_home.room_level_status_change(room_id_selection_2, room_level_option)
     smart_home.display_selected_room(room_id_selection_2)
+    # might need to reuse this
     smart_plug_id_selection = int(input("Please select a smart plug ID (integer only): "))
     print(
         "PLUG LEVEL OPTIONS \n 1 - Switch plug off \n 2 - Switch plug on \n 3 - Change attached device \n 4 - Move "
@@ -61,12 +62,10 @@ def main():
         # we are now displaying all the available smart plugs
         smart_home.display_smart_plugs()
         # choosing our smart plug that we want to be moved into a different room
-        plug_selection = int(input(
-            "Please select the smart plug id you would like to move to your selected room:  (integer only) "))
-        smart_home.move_plug(room_selection, plug_selection)
+
+        smart_home.move_plug(room_selection, smart_plug_id_selection)
         # once everything has been moved we are then displaying everything
         smart_home.display_selected_room(room_selection)
-        smart_home.display_smart_plugs()
 
 
 main()
