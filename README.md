@@ -1,2 +1,2 @@
 # SmartHome Dashboard Console
-example 
+
