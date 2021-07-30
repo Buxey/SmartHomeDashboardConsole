@@ -52,4 +52,3 @@ class Room:
         for plug in self._plug_list:
             if plug.get_smart_plug_id() == smart_plug_id_selection:
                 plug.set_smart_plug_device(device_replacement)
-                return
