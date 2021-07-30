@@ -56,7 +56,6 @@ def main():
         smart_home.display_room_list()
         room_selection = int(input(
             "Please select the room you would like the smart plug to be moved to:  (integer only) "))
-        # i believe that we need to be passing in the device selected too
         smart_home.move_smart_plug(device_list[room_selection - 1], room_selection, smart_plug_id_selection)
         smart_home.display_selected_room(room_selection)
 

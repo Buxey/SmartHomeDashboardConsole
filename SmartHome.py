@@ -61,5 +61,4 @@ class SmartHome:
     def move_smart_plug(self, device_type, room_selection, smart_plug_id_selection):
         for room in self._rooms_list:
             if room.get_room_id() == room_selection:
-                # struggling to pass down the device selected once the smartplug has been moved
                 room.create_smart_plug_list(device_type, smart_plug_id_selection)
