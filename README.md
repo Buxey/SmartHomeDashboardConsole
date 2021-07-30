@@ -1,1 +1,1 @@
-# SmartHomePythonProject
+# SmartHome Dashboard Console
