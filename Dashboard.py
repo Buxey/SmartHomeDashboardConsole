@@ -58,6 +58,6 @@ def main():
             "Please select the room you would like the smart plug to be moved to:  (integer only) "))
         smart_home.move_smart_plug(device_list[room_selection - 1], room_selection, smart_plug_id_selection)
         smart_home.display_selected_room(room_selection)
-
+        # random text
 
 main()
