@@ -60,4 +60,5 @@ def main():
         smart_home.display_selected_room(room_selection)
         # random text
 
+
 main()
